@@ -12,7 +12,7 @@ var projectClient = new AIProjectClient(connectionString , new DefaultAzureCrede
 
 
 var connectionClient = projectClient.GetConnectionsClient();
-ConnectionResponse connection = connectionClient.GetDefaultConnection(ConnectionType.AzureAIServices , true);
+ConnectionResponse connection = connectionClient.GetDefaultConnection(ConnectionType.Serverless , true);
 
 var apiAuth = connection.Properties as ConnectionPropertiesApiKeyAuth;
 var credential = new AzureKeyCredential(apiAuth.Credentials.Key);
