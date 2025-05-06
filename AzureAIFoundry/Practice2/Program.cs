@@ -4,7 +4,7 @@ using Azure;
 using Azure.AI.OpenAI;
 using OpenAI.Chat;
 
-string connectionString = "eastus2.api.azureml.ms;4914e4b9-a086-4a23-8558-00038f36080e;rg-Albert89111296002-5224_ai;albert89111296002-7242";
+string connectionString = "eastus2.api.azureml.ms;4914e4b9-a086-4a23-8558-00038f36080e;rg-albert89111296002-4953_ai;albert89111296002-7935";
 var options = new DefaultAzureCredentialOptions
 {
     TenantId = "2dea6ebd-8596-4848-88b5-170e0696c393" // 正確的 tenant ID
